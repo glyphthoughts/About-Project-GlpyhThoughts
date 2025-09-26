@@ -698,6 +698,28 @@
 
 
     <script>
+        // Force scroll to top on page load/refresh
+        window.addEventListener('beforeunload', function () {
+            window.scrollTo(0, 0);
+        });
+
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                window.scrollTo(0, 0);
+            }, 50);
+        });
+
+        // Also force scroll to top immediately when DOM loads
+        document.addEventListener('DOMContentLoaded', function () {
+            window.scrollTo(0, 0);
+            createStars();
+        });
+
+        // Additional fallback for browsers that maintain scroll position
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+
         function createStars() {
             const starField = document.getElementById('starField');
             const isMobile = window.innerWidth <= 768;
@@ -749,7 +771,6 @@
 
 
 
-        document.addEventListener('DOMContentLoaded', createStars);
         window.addEventListener('resize', debouncedResize);
     </script>
 </body>
