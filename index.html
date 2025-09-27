@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +17,6 @@
             -ms-user-select: none;
         }
 
-
-
-
-
         body {
             font-family: 'VT323', monospace;
             background-color: #0a0a0a;
@@ -35,10 +27,6 @@
             min-height: 100vh;
         }
 
-
-
-
-
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -46,10 +34,6 @@
             position: relative;
             z-index: 2;
         }
-
-
-
-
 
         h1 {
             font-size: clamp(2rem, 8vw, 3rem);
@@ -61,10 +45,6 @@
             opacity: 0;
             animation: titleFadeIn 2s ease-out 0.5s forwards;
         }
-
-
-
-
 
         h2 {
             font-size: clamp(1.5rem, 5vw, 2rem);
@@ -78,10 +58,6 @@
             animation: textSlideIn 1.5s ease-out forwards;
         }
 
-
-
-
-
         h3 {
             font-size: clamp(1.2rem, 4vw, 1.5rem);
             margin: 2rem 0 1rem 0;
@@ -91,10 +67,6 @@
             transform: translateY(20px);
             animation: textSlideIn 1.5s ease-out forwards;
         }
-
-
-
-
 
         p {
             font-size: clamp(1rem, 3vw, 1.2rem);
@@ -107,10 +79,6 @@
             animation: textSlideIn 1.5s ease-out forwards;
         }
 
-
-
-
-
         .intro {
             font-size: clamp(1.1rem, 3.5vw, 1.3rem);
             margin-bottom: 2rem;
@@ -120,10 +88,6 @@
             transform: translateY(20px);
             animation: textSlideIn 1.5s ease-out forwards;
         }
-
-
-
-
 
         .back-button {
             display: inline-block;
@@ -145,10 +109,6 @@
             animation: textSlideIn 1.5s ease-out forwards;
         }
 
-
-
-
-
         .back-button:hover {
             background-color: rgba(255, 255, 255, 0.7);
             border-color: rgba(255, 255, 255, 0.9);
@@ -156,27 +116,15 @@
             box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
         }
 
-
-
-
-
         .back-button:active {
             transform: translateY(0);
             box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
         }
 
-
-
-
-
         .button-container {
             text-align: center;
             margin-top: 2rem;
         }
-
-
-
-
 
         .star-field {
             position: fixed;
@@ -189,10 +137,6 @@
             overflow: hidden;
         }
 
-
-
-
-
         .pixel {
             position: absolute;
             width: 3px;
@@ -203,19 +147,11 @@
             animation: twinkle 3s infinite alternate;
         }
 
-
-
-
-
         @keyframes twinkle {
             from {
                 opacity: 0.2;
                 transform: scale(1);
             }
-
-
-
-
 
             to {
                 opacity: 0.6;
@@ -223,23 +159,17 @@
             }
         }
 
-
-
         @keyframes titleFadeIn {
             from {
                 opacity: 0;
                 transform: translateY(-30px);
             }
 
-
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
-
 
         @keyframes textSlideIn {
             from {
@@ -247,56 +177,40 @@
                 transform: translateY(20px);
             }
 
-
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
-
-
         .section {
             margin-bottom: 4rem;
         }
-
-
 
         .section:nth-child(2) h2,
         .section:nth-child(2) p {
             animation-delay: 0.8s;
         }
 
-
-
         .section:nth-child(3) h2,
         .section:nth-child(3) p {
             animation-delay: 1.0s;
         }
-
-
 
         .section:nth-child(4) h2,
         .section:nth-child(4) p {
             animation-delay: 1.2s;
         }
 
-
-
         .section:nth-child(5) h2,
         .section:nth-child(5) p {
             animation-delay: 1.4s;
         }
 
-
-
         .section:nth-child(6) h2,
         .section:nth-child(6) p {
             animation-delay: 1.6s;
         }
-
-
 
         .section:nth-child(7) h2,
         .section:nth-child(7) p,
@@ -304,23 +218,15 @@
             animation-delay: 1.8s;
         }
 
-
-
         .section:nth-child(8) h2,
         .section:nth-child(8) p {
             animation-delay: 2.0s;
         }
 
-
-
         .section:nth-child(9) p,
         .section:nth-child(9) .back-button {
             animation-delay: 2.2s;
         }
-
-
-
-
 
         @media screen and (max-width: 768px) {
             .container {
@@ -328,33 +234,17 @@
                 max-width: 100%;
             }
 
-
-
-
-
             h1 {
                 margin-bottom: 2rem;
             }
-
-
-
-
 
             h2 {
                 margin: 2rem 0 1rem 0;
             }
 
-
-
-
-
             h3 {
                 margin: 1.5rem 0 0.8rem 0;
             }
-
-
-
-
 
             p {
                 text-align: left;
@@ -362,34 +252,18 @@
                 line-height: 1.7;
             }
 
-
-
-
-
             .intro {
                 margin-bottom: 1.5rem;
             }
-
-
-
-
 
             .section {
                 margin-bottom: 3rem;
             }
 
-
-
-
-
             .pixel {
                 width: 2px;
                 height: 2px;
             }
-
-
-
-
 
             .back-button {
                 padding: 0.6rem 1.2rem;
@@ -397,28 +271,16 @@
             }
         }
 
-
-
-
-
         @media screen and (min-width: 769px) and (max-width: 1024px) {
             .container {
                 padding: 30px 25px;
                 max-width: 90%;
             }
 
-
-
-
-
             p {
                 line-height: 1.65;
             }
         }
-
-
-
-
 
         @media screen and (min-width: 1200px) {
             .container {
@@ -426,18 +288,10 @@
                 padding: 50px 30px;
             }
 
-
-
-
-
             .section {
                 margin-bottom: 5rem;
             }
         }
-
-
-
-
 
         @media screen and (min-width: 1400px) {
             .container {
@@ -445,35 +299,19 @@
             }
         }
 
-
-
-
-
         @media screen and (max-width: 896px) and (orientation: landscape) {
             .container {
                 padding: 15px 20px;
             }
 
-
-
-
-
             h1 {
                 margin-bottom: 1.5rem;
             }
-
-
-
-
 
             .section {
                 margin-bottom: 2rem;
             }
         }
-
-
-
-
 
         @media (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi) {
@@ -483,26 +321,16 @@
             }
         }
 
-
-
-
-
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: #0a0a0a;
             }
         }
 
-
-
-
-
         @media (prefers-reduced-motion: reduce) {
             .pixel {
                 animation: none;
             }
-
-
 
             h1,
             h2,
@@ -515,42 +343,24 @@
                 transform: none !important;
             }
 
-
-
             .back-button {
                 transition: none;
             }
         }
-
-
-
-
 
         @media print {
             .star-field {
                 display: none;
             }
 
-
-
-
-
             .back-button {
                 display: none;
             }
-
-
-
-
 
             body {
                 background: white;
                 color: black;
             }
-
-
-
-
 
             h1,
             h2,
@@ -562,89 +372,45 @@
     </style>
 </head>
 
-
-
-
-
 <body>
     <div class="star-field" id="starField"></div>
 
-
-
-
-
     <div class="container">
         <h1>The Mind Behind</h1>
-
-
-
-
 
         <div class="section">
             <h2>About GlyphThoughts</h2>
             <p>I am Shantanu. On my 18th birthday, in darkness before dawn, GlyphThoughts was born: not as celebration,
                 but necessity.</p>
 
-
-
-
-
             <p>I had always been drawn to philosophy's shadows, to words that heal invisible wounds. People found solace
                 in conversations with me, drawn to something unnamed, perhaps darkness transformed into light for their
                 benefit. Their gratitude became my burden, their healing my purpose.</p>
-
-
-
-
 
             <p>Then came the catalyst: the 2A Plus by Nothing. Its widgets contained forgotten wisdom. Profound thoughts
                 abandoned by a distracted world. I saw treasure in the digital void, waiting for someone with vision
                 dark enough to retrieve it.</p>
 
-
-
-
-
             <p>I began in silence, posting thoughts that cut through existence's noise. Each post rebelled against
                 meaningless chatter drowning modern souls. Slowly, deliberately, I learned creation: reels with weight,
                 content that mattered.</p>
-
-
-
-
 
             <p>Surface-level inspiration wasn't enough. I built something deeper: a website where the GT family: those
                 brave enough to seek wisdom in darkness, could find substance. Here, philosophy meets technology in
                 unprecedented ways. Projects emerge from code and contemplation, offering engagement beyond shallow
                 platform interactions.</p>
 
-
-
-
-
             <p>Currently: expanding Stoic philosophy and interactive technology intersections, building tools making
                 ancient wisdom accessible to minds drowning in digital noise.</p>
-
-
-
-
 
             <p>Three principles guide this work: Community: bound not by comfort but shared truth pursuit.
                 Innovation: technology serves wisdom, not reverse. Growth: profound change comes through confronting
                 what
                 others avoid.</p>
 
-
-
-
-
             <p>When not coding or curating, I explore philosophical texts most fear, seeking ways to challenge and
                 elevate followers.</p>
         </div>
-
-
-
-
 
         <div class="section">
             <h2>Philosophy</h2>
@@ -654,142 +420,72 @@
                 for minds refusing easy answers.</p>
         </div>
 
-
-
-
-
         <div class="section">
             <h2>Vision</h2>
             <p>GlyphThoughts creates what the world lacks: where ancient wisdom meets modern capability, where
                 depth-seekers find it uncompromised.</p>
 
-
-
-
-
             <p>This isn't typical motivational content designed to make you feel better. This is wisdom crafted to make
                 you think deeper, question harder, grow where comfort cannot provide. Each experience is personalized
                 because true growth is individual. What transforms one soul may leave another unchanged.</p>
-
-
-
-
 
             <p>The mission evolves, as it must. What began as posts becomes something greater: a global network of minds
                 unafraid to explore human existence's darker corners, finding light not by avoiding shadows, but
                 understanding them.</p>
 
-
-
-
-
             <p>Welcome to the GT family. Here, growth isn't gentle.</p>
         </div>
-
-
-
-
 
         <div class="section">
             <h2>Website Projects</h2>
             <p>Each project converges philosophical depth with technological precision. These aren't mere
                 websites. They're digital experiences crafted to challenge, inspire, transform.</p>
 
-
-
-
-
             <p>Each serves purpose: interactive philosophical exercises challenging assumptions, coding tutorials
                 merging technical skill with deeper thinking, community spaces where authentic discourse replaces
                 shallow engagement. These aren't portfolio pieces. They're transformation instruments.</p>
 
-
-
-
-
             <p>Built from darkness, hosted in light. Every code line serves purpose deeper than functionality. Explore
                 what happens when ancient wisdom meets modern implementation.</p>
 
-
-
-
-
             <p>View live experiences and examine foundations: all code transparent, methods revealed.</p>
-
-
-
-
 
             <p><a href="https://github.com/glyphthoughts?tab=repositories" target="_blank" rel="noopener"
                     style="color: #ffffff; text-decoration: underline;">Explore all repositories on GitHub</a></p>
         </div>
-
-
-
-
 
         <div class="section">
             <h2>Connect</h2>
             <p>For direct dialogue, discourse cutting deeper than comments and forms. The GT family extends beyond
                 platforms, into spaces where real conversation lives.</p>
 
-
-
-
             <p>Reach through the shadows via Instagram DMs for immediate discourse, or compose deeper reflections
                 through <a href="mailto:glyphthoughts@gmail.com"
                     style="color: #ffffff; text-decoration: underline;">email</a> where thoughts can unfold without
                 platform constraints.</p>
 
-
-
-
             <p>Choose your medium. Both paths lead to authentic exchange beyond surface interactions.</p>
         </div>
-
-
-
-
 
         <div class="section">
             <h2>Frequently Asked Questions</h2>
             <p>For those seeking clarity before diving deeper into shadows.</p>
 
-
-
-
-
             <h3>What is the GT family?</h3>
             <p>Not followers or subscribers: family. Those understanding growth requires discomfort, that wisdom lives
                 between easy answers. We're bound by shared truth pursuit, not comfort.</p>
-
-
-
-
 
             <h3>Why the dark tone?</h3>
             <p>Surface-level positivity serves no one seeking real transformation. Darkness isn't the enemy: ignorance
                 is. We explore what others avoid because authentic growth lives there.</p>
 
-
-
-
-
             <h3>How is this different from typical motivational content?</h3>
             <p>Most motivational content makes you feel better. This makes you think deeper. We don't offer comfort. We
                 offer tools for those brave enough to question never-examined beliefs.</p>
 
-
-
-
-
             <h3>What should I expect from GlyphThoughts projects?</h3>
             <p>Discomfort. Challenge. Growth only coming from confronting avoidance. Each project pushes beyond shallow
                 interactions dominating digital spaces.</p>
-
-
-
-
 
             <h3>Why isn't this page fancy like other websites?</h3>
             <p>This page was also created as a project (<a
@@ -798,32 +494,16 @@
                 minimalism,
                 purely for knowing about me and the work. Complexity serves no one when substance is the goal.</p>
 
-
-
-
-
             <p>Fancy designs are distractions: animations serving ego over understanding, graphics competing with
                 meaning, elements existing only to impress rather than inform. This simplicity is intentional: faster
                 loading, clearer focus, no unnecessary mobile navigation noise.</p>
-
-
-
-
 
             <p>Design mirrors GlyphThoughts philosophy: stripping superfluity to reveal essence. Eliminating decoration
                 gives remaining elements more weight. This isn't about lacking resources or skill; it's choosing
                 substance over spectacle. Content should challenge thinking, not patience.</p>
 
-
-
-
-
             <p>True sophistication lies not in additions, but knowing what to remove. This page conveys information and
                 facilitates connection: anything beyond interferes with that goal.</p>
-
-
-
-
 
             <h3>Is this suitable for everyone?</h3>
             <p>No. Only suitable if you genuinely want change: not just feeling better about staying the same. If you're
@@ -831,71 +511,38 @@
                 this isn't your destination. But if you're prepared to question fundamental beliefs, embrace difficult
                 truths, undergo uncomfortable genuine change, welcome.</p>
 
-
-
-
-
             <h3>Have a Question Not Listed Here?</h3>
             <p>Profound inquiries often can't be anticipated. If your question cuts deeper than above, challenges the
                 framework itself, or demands discourse beyond simple answers, reach through Instagram DMs.</p>
 
-
-
-
-
             <p>Direct message for genuine inquiry: questions emerging from serious content engagement, not casual
                 curiosity. Ask what others might hesitate to voice.</p>
         </div>
-
-
-
-
 
         <div class="section">
             <h2>Suggestions</h2>
             <p>Wisdom emerges from dialogue, not monologue. Your insights matter: not because all opinions are equal,
                 but because true innovation requires perspectives I cannot see alone.</p>
 
-
-
-
-
             <p>Share what challenges you, what this project lacks, what it could become through Instagram DMs. This
                 isn't for praise or surface feedback. This is for those seeing deeper, thinking harder, daring to
                 suggest what others might fear voicing.</p>
         </div>
 
-
-
-
-
         <div class="section">
             <p class="intro">A word for the unprepared: this path demands more than passive consumption. Growth requires
                 discomfort. Wisdom demands questioning never-examined beliefs. Proceed accordingly.</p>
 
-
-
-
-
             <p class="intro">You've witnessed the origin. The rest is yours to forge.</p>
 
-
-
-
-
             <div class="button-container">
-                <a href="https://glyphthoughts.carrd.co" class="back-button">Back to Website</a>
+                <button onclick="history.back()" class="back-button">Go Back</button>
             </div>
         </div>
     </div>
 
-
-
-
-
     <script>
         let isNavigating = false;
-
 
         window.addEventListener('load', function () {
             setTimeout(function () {
@@ -903,20 +550,14 @@
             }, 50);
         });
 
-
-
         document.addEventListener('DOMContentLoaded', function () {
             window.scrollTo(0, 0);
             createStars();
         });
 
-
-
         if (history.scrollRestoration) {
             history.scrollRestoration = 'manual';
         }
-
-
 
         window.addEventListener('beforeunload', function (e) {
 
@@ -925,22 +566,14 @@
             }
         });
 
-
-
         document.querySelector('.back-button').addEventListener('click', function () {
             isNavigating = true;
         });
-
-
 
         function createStars() {
             const starField = document.getElementById('starField');
             const isMobile = window.innerWidth <= 768;
             const isTablet = window.innerWidth <= 1024;
-
-
-
-
 
             let starCount = 100;
             if (isMobile) {
@@ -949,34 +582,18 @@
                 starCount = 75;
             }
 
-
-
-
-
             for (let i = 0; i < starCount; i++) {
                 const star = document.createElement('div');
                 star.className = 'pixel';
-
-
-
-
 
                 star.style.left = Math.random() * 100 + '%';
                 star.style.top = Math.random() * 100 + '%';
                 star.style.animationDelay = Math.random() * 3 + 's';
                 star.style.animationDuration = (2 + Math.random() * 4) + 's';
 
-
-
-
-
                 starField.appendChild(star);
             }
         }
-
-
-
-
 
         function handleResize() {
             const starField = document.getElementById('starField');
@@ -984,23 +601,14 @@
             createStars();
         }
 
-
-
-
-
         let resizeTimeout;
         function debouncedResize() {
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(handleResize, 250);
         }
 
-
-
-
-
         window.addEventListener('resize', debouncedResize);
     </script>
 </body>
-
 
 </html>
